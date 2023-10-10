@@ -1,0 +1,28 @@
+<div class="user-container">
+  <h1 id="user-header">Nutzerliste</h1>
+  <div class="user-content">
+    <ul>
+      <div
+        *ngFor="let singleUser of users; let singleUserIndex = index"
+        class="user-card"
+      >
+        <div class="user-header">
+          <h3 id="user-name">Benutzer: {{ singleUser.name }}</h3>
+        </div>
+
+        <div class="user-email">
+          <h4 id="user-email">E-Mail: {{ singleUser.email }}</h4>
+        </div>
+
+        <div class="user-actions">
+          <button
+            id="user-action__delete"
+            (click)="onDeleteUser(singleUser.email)"
+          >
+            Nutzer entfernen
+          </button>
+        </div>
+      </div>
+    </ul>
+  </div>
+</div>

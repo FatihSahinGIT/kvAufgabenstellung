@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Max Mustermann",
+    "age": 35,
+    "email": "max.mustermann@example.com",
+    "address": {
+      "street": "Musterstraße 1",
+      "city": "Berlin",
+      "zip": "10115",
+      "country": "Deutschland"
+    },
+    "orders": [
+      {
+        "id": 1,
+        "date": "2023-10-10",
+        "total": 49.99,
+        "items": [
+          {
+            "name": "T-Shirt",
+            "quantity": 2,
+            "price": 19.99
+          },
+          {
+            "name": "Hose",
+            "quantity": 1,
+            "price": 9.99
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "date": "2023-10-09",
+        "total": 29.99,
+        "items": [
+          {
+            "name": "Schuhe",
+            "quantity": 1,
+            "price": 29.99
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Anna Schmidt",
+    "age": 28,
+    "email": "anna.schmidt@example.com",
+    "address": {
+      "street": "Musterstraße 2",
+      "city": "Berlin",
+      "zip": "10115",
+      "country": "Deutschland"
+    },
+    "orders": [
+      {
+        "id": 1,
+        "date": "2023-10-08",
+        "total": 19.99,
+        "items": [
+          {
+            "name": "T-Shirt",
+            "quantity": 1,
+            "price": 19.99
+          }
+        ]
+      }
+    ]
+  }
+]

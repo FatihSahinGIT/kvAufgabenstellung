@@ -1,0 +1,38 @@
+.nav-container {
+  height: 6rem;
+  background: #f0f0f0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.nav {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 3rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.nav-items a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.active {
+  padding: 0.25rem;
+  border-radius: 4px;
+  background: #cacaca;
+  color: white !important;
+}
