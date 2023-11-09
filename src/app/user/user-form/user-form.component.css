@@ -1,0 +1,68 @@
+.form-header {
+    height: calc(100vh - 8vh);
+    min-height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.form-content {
+    background-color: rgba(54, 52, 52, 0.15);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+
+    height: max-content;
+    padding: 2rem;
+
+    opacity: 0;
+    transform: translateY(-5%);
+    width: 90%;
+}
+
+form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 90%;
+}
+
+.form-name,
+.form-email {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+#form-head {
+    text-transform: uppercase;
+}
+
+input {
+    all: unset;
+    border: 1px solid white;
+    height: 3vh;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#form-actions-submit {
+    all: unset;
+    cursor: pointer;
+    border-radius: 8px;
+    background: transparent;
+    padding: 0.25rem;
+    transition: all 0.25s ease-in-out;
+}
+
+#form-actions-submit:hover {
+    background-color: black;
+
+}

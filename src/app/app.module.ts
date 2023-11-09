@@ -1,17 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from "@angular/common/http";
+
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
-import { UserFormComponent } from './user-form/user-form.component';
+import { UserFormComponent } from './user/user-form/user-form.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { FilternamePipe } from '../pipes/filtername.pipe';
+import { SingleUserComponent } from './user/single-user/single-user.component';
+
+
 
 const appRoutes: Routes = [
-  { path: "", component: UserComponent, pathMatch: 'full' },
-  { path: "newUser", component: UserFormComponent }
+  { path: "", component: HomeComponent, pathMatch: 'full' },
+  { path: "dashboard", component: UserComponent },
+  { path: "create", component: UserFormComponent },
+  { path: "user/:id", component: SingleUserComponent },
 ]
 
 
@@ -20,11 +29,16 @@ const appRoutes: Routes = [
     AppComponent,
     UserComponent,
     HeaderComponent,
-    UserFormComponent
+    UserFormComponent,
+    HomeComponent,
+    FilternamePipe,
+    SingleUserComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],

@@ -1,18 +1,14 @@
 <div class="nav-container">
-  <div class="nav">
-    <div class="nav-title">
+  <nav>
+    <div class="nav-title" id="nav-title">
       <h1>
-        <a routerLink="/" style="all: unset; cursor: pointer"
-          >kv.digital Beispielaufgabe</a
-        >
+        <a routerLink="/"><img src="../../assets/logo.png"></a>
       </h1>
     </div>
 
-    <div class="nav-items">
-      <a routerLink="/" routerLinkActive="active">Home</a>
-      <a routerLink="/newUser" routerLinkActive="active"
-        >Neuen Nutzer erstellen
-      </a>
+    <div class="nav-items" id="nav-items">
+      <a routerLink="/dashboard">Dashboard</a>
+      <a routerLink="/create">Kontoerstellung</a>
     </div>
-  </div>
+  </nav>
 </div>

@@ -1,0 +1,36 @@
+<div class="single-container">
+    <div class="single-content">
+
+        <div class="single-img-container">
+            <img src={{user.picture}} alt="User Profile Picture" id="single-img">
+        </div>
+
+        <div class="single-info">
+
+            <div class="single-info-header">
+                <h1 id="single-header">{{user.name}}</h1>
+
+                <div class="single-info-cred">
+                    <h3 id="single-email">{{user.email}}</h3>
+                    <h3 id="single-city">{{user.address.city}}</h3>
+                </div>
+            </div>
+
+            <div class="single-info-order">
+                <ng-container *ngIf="userOrders.length > 0; else noOrders">
+                    <ul *ngFor="let singleOrder of userOrders" class="single-item">
+                        <h2>Datum {{ singleOrder.date | date: 'dd MM yyyy' }} </h2>
+                        <li *ngFor="let singleItems of singleOrder.items"><strong>Artikel: {{singleItems.name}}</strong>
+                        </li>
+                        <h3>Gesamtpreis {{ singleOrder.total | currency:'EUR':'symbol' }}<br></h3>
+                    </ul>
+                </ng-container>
+                <ng-template #noOrders class="sinlge-item">
+                    <p id="no-items">Nutzer hat keine Bestellungen getätigt!</p>
+                </ng-template>
+            </div>
+
+        </div>
+
+    </div>
+</div>

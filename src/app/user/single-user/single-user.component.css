@@ -1,0 +1,95 @@
+.single-container {
+    position: absolute;
+    z-index: 2;
+    top: 12vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.single-content {
+    width: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.single-img-container {
+    width: 520px;
+    height: 600px;
+    position: relative;
+    /* Wichtig für absolute Positionierung des Bildes */
+    overflow: hidden;
+    /* Verhindert das Überlaufen von Bildern über den Rahmen */
+}
+
+.single-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 4px;
+}
+
+.single-info-header {
+    background-color: #212122;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.single-info-cred {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#single-email,
+#single-city {
+    font-weight: 400;
+}
+
+#single-header {
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+.single-info-order {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: #212122;
+    border-radius: 4px;
+}
+
+.single-item {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+
+.single-item li {
+    list-style: none;
+    margin-top: .5rem;
+}
+
+
+#no-items {
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
