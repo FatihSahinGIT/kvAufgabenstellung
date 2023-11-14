@@ -1,5 +1,7 @@
 import { Component, AfterViewInit } from '@angular/core';
 import { gsap } from 'gsap/gsap-core';
+import { Observable, Observer } from 'rxjs';
+import { map, filter } from "rxjs/operators"
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,10 @@ import { gsap } from 'gsap/gsap-core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+  disableScroll = true;
+
+
   ngAfterViewInit(): void {
     const homeText = document.getElementById('home-text');
 

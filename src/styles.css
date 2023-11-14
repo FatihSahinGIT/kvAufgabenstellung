@@ -1,15 +1,17 @@
 /* FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("./assets/font/trap/trap.css");
 
 
 * {
-  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
 }
 
+
+
 body {
-  background-color: #212122;
+  background: linear-gradient(90deg, #021926, #022722, #270207, #020727);
+  background-repeat: repeat-y;
 }

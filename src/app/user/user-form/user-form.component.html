@@ -1,33 +1,36 @@
 <div class="form-header">
   <div class="form-content" id="form-content">
     <div class="form-header-description">
-      <h1 id="form-head">Erstelle neuen Nutzer</h1>
+      <h1 id="form-head">Nutzer anlegen</h1>
+      <h3 id="form-text">In diesem Bereich von Userwise kannst du unkompliziert und schnell neue Nutzeraccounts
+        erstellen. Wir vereinfachen den Prozess, damit du dich auf das Wesentliche konzentrieren kannst: den Aufbau
+        deiner Community.</h3>
     </div>
 
     <div class="form-content-form">
       <form (submit)="onSubmit()" #formData="ngForm">
         <div class="form-name">
-          <label for="name">Name</label>
-          <input type="text" name="name" placeholder="Namen eintragen" [(ngModel)]="name" id="inputName" />
+          <label for="name">vollständiger Name</label>
+          <input type="text" name="name" [(ngModel)]="name" id="inputName" />
         </div>
 
         <div class="form-email">
-          <label for="email">E-Mail</label>
-          <input type="text" name="email" placeholder="E-Mail eintragen" [(ngModel)]="emailAddress" id="inputEmail" />
+          <label for="email">E-Mail Adresse</label><br />
+          <input type="text" name="email" [(ngModel)]="emailAddress" id="inputEmail" />
         </div>
 
         <div class="form-age">
           <label for="age">Alter</label>
-          <input type="number" name="age" placeholder="Alter eingeben" [(ngModel)]="age" id="inputAge" />
+          <input type="number" name="age" [(ngModel)]="age" id="inputAge" />
         </div>
 
         <div class="form-address">
-          <label for="street">Straße</label>
-          <input type="text" name="street" placeholder="Straße eingeben" [(ngModel)]="street" id="inputStreet" />
+          <label for="street">Adresse und Hausnummer</label>
+          <input type="text" name="street" [(ngModel)]="street" id="inputStreet" />
           <label for="city">Stadt</label>
-          <input type="text" name="city" placeholder="Stadt eingeben" [(ngModel)]="city" id="inputCity" />
+          <input type="text" name="city" [(ngModel)]="city" id="inputCity" />
           <label for="zip">PLZ</label>
-          <input type="text" name="zip" placeholder="PLZ eingeben" [(ngModel)]="zip" id="inputZip" />
+          <input type="text" name="zip" [(ngModel)]="zip" id="inputZip" />
         </div>
 
         <div class="form-actions">

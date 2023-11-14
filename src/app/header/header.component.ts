@@ -8,6 +8,7 @@ import { gsap } from 'gsap';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements AfterViewInit {
+
   ngAfterViewInit(): void {
     const navTitle = document.getElementById('nav-title');
     const navItems = document.getElementById('nav-items');

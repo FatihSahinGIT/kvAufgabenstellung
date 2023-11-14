@@ -1,30 +1,99 @@
 .home-container {
     position: absolute;
-    bottom: 20vh;
-    left: 5vh;
-    z-index: 2;
-    width: 90%;
-}
+    top: 22vh;
 
-.home-text {
-    transform: translateY(10%);
-    opacity: 0;
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+    gap: 2rem;
+    margin: 0 5rem;
 }
 
-#home-side-text {
-    margin-top: 4rem;
+.home-logo {
+    height: auto;
+    width: auto;
 }
 
-#home-text-content {
-    font-size: 4.5rem;
-    font-weight: 200;
+.home-logo img {
+    width: 21.28025rem;
+    height: 5.47588rem;
 }
 
-#mng {
-    font-weight: 600;
+.home-content {
+
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    margin: 0 2rem;
+}
+
+.home-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    padding: 1.5rem;
+
+    height: 100%;
+
+
+    border-radius: 1.125rem;
+    background: rgba(217, 217, 217, 0.11);
+
+}
+
+.home-preview img {
+    width: 500px;
+}
+
+.home-text-container {
+    display: flex;
+    width: 80%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.875rem;
+    height: 85vh;
+}
+
+#home-header {
+    font-family: "TrapB";
+    font-size: 3.125rem;
+    font-weight: 700;
+    line-height: normal;
+    /* letter-spacing: -0.15625rem; */
+}
+
+#home-text {
+    font-family: "TrapR";
+    font-size: 2.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.10938rem;
+}
+
+#home-btn {
+    width: 9.8525rem;
+    height: 2.98263rem;
+
+    border-radius: 0.75rem;
+    background: #F8F8F8;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+#home-btn a {
+    color: rgba(0, 0, 0, 0.83);
+    text-align: center;
+    font-family: "TrapSemi";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.05rem;
 }

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TrapR';
+    src: url("/assets/font/trap/Trap\ Regular.otf") format('opentype');
+    font-weight: 100;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapB';
+    src: url("/assets/font/trap/Trap\ Black.otf") format('opentype');
+    font-weight: 500;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapBo';
+    src: url("/assets/font/trap/Trap\ Bold.otf") format('opentype');
+    font-weight: 700;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapEXBo';
+    src: url("/assets/font/trap/Trap\ ExtraBold.otf") format('opentype');
+    font-weight: 800;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapL';
+    src: url("/assets/font/trap/Trap\ Light.otf") format('opentype');
+    font-weight: 300;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapM';
+    src: url("/assets/font/trap/Trap\ Medium.otf") format('opentype');
+    font-weight: 400;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}
+
+@font-face {
+    font-family: 'TrapS';
+    src: url("/assets/font/trap/Trap\ Semibold.otf") format('opentype');
+    font-weight: 600;
+    /* Weitere Formate hier hinzufügen, wenn benötigt */
+}

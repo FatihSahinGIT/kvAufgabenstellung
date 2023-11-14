@@ -15,15 +15,19 @@
               <h3 id="user-name">{{ singleUser.name }}</h3>
             </div>
 
-            <div class="user-email">
-              <h4 id="user-email">{{ singleUser.email }}</h4>
+            <div class="user-age">
+              <h4 id="user-age">Age {{ singleUser.age }}</h4>
             </div>
 
+            <div class="user-location">
+              <h4 id="user-location">{{ singleUser.address.city }}, {{singleUser.address.country}}</h4>
+            </div>
+            <!-- 
             <div class="user-actions">
               <button id="user-action__delete" (click)="onDeleteUser(singleUser.email)">
                 Löschen
               </button>
-            </div>
+            </div> -->
           </div>
         </div>
       </ng-container>

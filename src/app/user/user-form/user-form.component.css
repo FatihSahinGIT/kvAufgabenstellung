@@ -1,18 +1,12 @@
 .form-header {
-    height: calc(100vh - 8vh);
+    height: 87vh;
     min-height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    position: absolute;
-    top: 10vh;
-    width: 100%;
-    z-index: 2;
 }
 
 .form-content {
-    background-color: rgba(54, 52, 52, 0.15);
     backdrop-filter: blur(5px);
     border-radius: 8px;
 
@@ -21,21 +15,78 @@
 
     opacity: 0;
     transform: translateY(-5%);
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-header-description {
+    width: 90%;
+    margin-right: 2rem;
+}
+
+#form-head {
+
+    font-family: "TrapB";
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#form-text {
+    margin-top: 1rem;
+    font-family: "TrapL";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.05rem;
     width: 90%;
 }
 
+.form-content-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+
+}
+
 form {
-    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 1rem;
-    width: 90%;
+    padding: 1.5rem;
+    height: max-content;
+    width: 100%;
+
+    border-radius: 0.75rem;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.45);
+}
+
+form>* {
+    margin-bottom: 1rem;
+}
+
+.form-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-address>* {
+    margin-bottom: 0.25rem;
 }
 
 .form-name,
-.form-email {
+.form-age {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -47,9 +98,13 @@ form {
 
 input {
     all: unset;
-    border: 1px solid white;
-    height: 3vh;
-    width: 100%;
+    font-family: "TrapS";
+    border-radius: 0.75rem;
+    background: #FFF;
+    color: black;
+    width: 26.586rem;
+    height: 2.10625rem;
+    flex-shrink: 0;
     padding: 0.5rem;
 }
 
@@ -65,4 +120,10 @@ input {
 #form-actions-submit:hover {
     background-color: black;
 
+}
+
+label {
+    font-family: "TrapB";
+    font-size: 1.2rem;
+    margin: 0.25rem 0;
 }

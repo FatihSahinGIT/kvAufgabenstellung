@@ -2,6 +2,7 @@
     height: max-content;
     font-size: 1rem;
     font-weight: 800;
+    border-bottom: 2px solid white;
 
 }
 
@@ -11,7 +12,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.25rem;
+    padding: 2rem;
 }
 
 .nav-title {
@@ -32,9 +33,11 @@ img {
 }
 
 .nav-items a {
+    font-family: "TrapB";
     all: unset;
     cursor: pointer;
     padding: .35rem;
+    font-size: 1.25rem;
     border-radius: 4px;
     text-decoration: none;
     transition: all .25s ease;

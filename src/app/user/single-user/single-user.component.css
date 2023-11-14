@@ -1,15 +1,3 @@
-.single-container {
-    position: absolute;
-    z-index: 2;
-    top: 12vh;
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .single-content {
     width: inherit;
     display: flex;
